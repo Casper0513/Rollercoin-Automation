@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,45 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="checkcooldown_script" xml:space="preserve">
+    <value>function f0x_3()
+{
+	var timer = document.querySelector('#root &gt; div &gt; div.content &gt; div &gt; div.react-wrapper &gt; div &gt; div &gt; div.choose-game-container.col-12.col-lg-8 &gt; div &gt; div.choose-game-body &gt; div &gt; div.select-game-block.col-12.col-lg-8 &gt; div &gt; div &gt; div.scrollContainer &gt; div &gt; div:nth-child(8) &gt; div &gt; div.img-container &gt; div &gt; svg &gt; path.CircularProgressbar-path')
+	if(timer != null)
+	{
+		var totalSeconds = parseInt(timer.style.strokeDasharray.split(', ')[0].replace('px', ''))
+		var currentSeconds = Math.abs(parseInt(timer.style.strokeDashoffset.split(', ')[0].replace('px', '')))
+		var remainingSeconds = totalSeconds - currentSeconds
+		return remainingSeconds;
+	}
+	else
+		return 0;
+}
+f0x_3();</value>
+  </data>
+  <data name="gainpower_result_script" xml:space="preserve">
+    <value>function f0x_4()
+{
+    var status_bar = document.querySelector('#root &gt; div &gt; div.content &gt; div &gt; div.react-wrapper &gt; div &gt; div.choose-game-main-container.row &gt; div.play-game-result.col-12.col-lg-8 &gt; div.justify-content-center.align-items-end.container-result-info.no-gutters.row &gt; div.game-result-info.col-12 &gt; div.loading')
+	var bot_msg = document.querySelector('#root &gt; div &gt; div.content &gt; header &gt; div.Toastify &gt; div &gt; div &gt; div.Toastify__toast-body &gt; div &gt; span')
+	if(status_bar != null) status_bar = status_bar.children[0];
+	if(status_bar != null) status_bar = status_bar.children[0];
+	if(status_bar != null) status_bar = status_bar.children[0];
+    if(status_bar != null) 
+	{
+		var status_bar_img_pos = parseInt(status_bar.style.backgroundPositionX.replace('px',''))
+		if(status_bar_img_pos == -54516) { return 0; }
+	}
+	if(status_bar != null) { return 1; }
+	if(bot_msg != null) if(bot_msg.innerText == 'The system has identified you as a bot. Please contact with support.') { return 2; }
+	return 4;
+}
+
+f0x_4()</value>
+  </data>
 </root>

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -61,15 +62,23 @@ namespace Rollercoin.API.Minigames
         public void Invoke_MouseClick_Safe(Point canvasPoint, MouseButton button)
         {
             Point currentMouseCoords = Cursor.Position;
-            Point screenCanvasPoint = CanvasOwner.PointToScreen(canvasPoint);
+            Point screenCanvasPoint = new Point();
+            if (CanvasOwner.InvokeRequired)
+                CanvasOwner.Invoke(new Action(() => screenCanvasPoint = CanvasOwner.PointToScreen(canvasPoint)));
+            else
+                screenCanvasPoint = CanvasOwner.PointToScreen(canvasPoint);
             Cursor.Position = screenCanvasPoint;
             switch(button)
             {
                 case MouseButton.Left:
-                    mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
+                    mouse_event(MOUSEEVENTF_LEFTDOWN, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
+                    Thread.Sleep(20);
+                    mouse_event(MOUSEEVENTF_LEFTUP, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
                     break;
                 case MouseButton.Right:
-                    mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
+                    mouse_event(MOUSEEVENTF_RIGHTDOWN, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
+                    Thread.Sleep(20);
+                    mouse_event(MOUSEEVENTF_RIGHTUP, (uint)screenCanvasPoint.X, (uint)screenCanvasPoint.Y, 0, 0);
                     break;
             }
             Cursor.Position = currentMouseCoords;

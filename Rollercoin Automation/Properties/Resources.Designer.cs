@@ -22,7 +22,7 @@ namespace Rollercoin.API.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Rollercoin.API.Properties {
         /// Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Rollercoin.API.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Rollercoin.API.Properties {
         ///   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap binance {
+        public static System.Drawing.Bitmap binance {
             get {
                 object obj = ResourceManager.GetObject("binance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bitcoin {
+        public static System.Drawing.Bitmap bitcoin {
             get {
                 object obj = ResourceManager.GetObject("bitcoin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,47 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap eos {
+        public static System.Drawing.Bitmap bitcoin_droppingcoin {
+            get {
+                object obj = ResourceManager.GetObject("bitcoin_droppingcoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap card_back_side {
+            get {
+                object obj = ResourceManager.GetObject("card_back_side", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dashcoin_droppingcoin {
+            get {
+                object obj = ResourceManager.GetObject("dashcoin_droppingcoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dogecoin_droppingcoin {
+            get {
+                object obj = ResourceManager.GetObject("dogecoin_droppingcoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap eos {
             get {
                 object obj = ResourceManager.GetObject("eos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +133,7 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ethereum {
+        public static System.Drawing.Bitmap ethereum {
             get {
                 object obj = ResourceManager.GetObject("ethereum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,9 +143,9 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap litecoin {
+        public static System.Drawing.Bitmap gain_power {
             get {
-                object obj = ResourceManager.GetObject("litecoin", resourceCulture);
+                object obj = ResourceManager.GetObject("gain_power", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,7 +153,47 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap monero {
+        public static System.Drawing.Bitmap game8_defeat {
+            get {
+                object obj = ResourceManager.GetObject("game8_defeat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap game8_victory {
+            get {
+                object obj = ResourceManager.GetObject("game8_victory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lightcoin {
+            get {
+                object obj = ResourceManager.GetObject("lightcoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lightcoin_droppingcoin {
+            get {
+                object obj = ResourceManager.GetObject("lightcoin_droppingcoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap monero {
             get {
                 object obj = ResourceManager.GetObject("monero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +203,17 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ripple {
+        public static System.Drawing.Bitmap restart_btn {
+            get {
+                object obj = ResourceManager.GetObject("restart_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ripple {
             get {
                 object obj = ResourceManager.GetObject("ripple", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,9 +223,39 @@ namespace Rollercoin.API.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rollercoin {
+        public static System.Drawing.Bitmap rollercoin {
             get {
                 object obj = ResourceManager.GetObject("rollercoin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap start_fullscreen {
+            get {
+                object obj = ResourceManager.GetObject("start_fullscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap stellar {
+            get {
+                object obj = ResourceManager.GetObject("stellar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tether {
+            get {
+                object obj = ResourceManager.GetObject("tether", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

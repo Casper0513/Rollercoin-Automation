@@ -59,11 +59,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bitmap_CV.cs" />
+    <Compile Include="Minigames\BotGameLog.cs" />
     <Compile Include="ChromiumWebBrowserMouseControls.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Core\API_Instance.cs" />
+    <Compile Include="Databases\DatabaseInterface.cs" />
     <Compile Include="Minigames\Canvas.cs" />
+    <Compile Include="Minigames\DropperGame.cs" />
     <Compile Include="Minigames\IMinigame.cs" />
     <Compile Include="Minigames\MemoryGame.cs" />
     <Compile Include="Responses\API_Response_Structures.cs" />
@@ -75,7 +78,7 @@
     <Compile Include="Core\Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -132,6 +135,9 @@
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.17</Version>
     </PackageReference>
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.18</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
@@ -159,6 +165,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rollercoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dogecoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitcoin_droppingcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashcoin_droppingcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dogecoin_droppingcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\litecoin_droppingcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stellar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tether.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game8_defeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game8_victory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_back_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gain_power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_btn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

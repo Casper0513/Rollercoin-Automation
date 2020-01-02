@@ -124,22 +124,58 @@
   <data name="bitcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bitcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bitcoin_droppingcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bitcoin_droppingcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card_back_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card_back_side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashcoin_droppingcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashcoin_droppingcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dogecoin_droppingcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dogecoin_droppingcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ethereum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ethereum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="litecoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="gain_power" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gain_power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game8_defeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game8_defeat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game8_victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game8_victory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litecoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightcoin_droppingcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\litecoin_droppingcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="monero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restart_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restart_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ripple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ripple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rollercoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rollercoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start_fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stellar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tether" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
